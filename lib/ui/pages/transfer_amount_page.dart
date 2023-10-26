@@ -217,7 +217,7 @@ class _TransferAmountPageState extends State<TransferAmountPage> {
                 // ignore: use_build_context_synchronously
                 Navigator.pushNamedAndRemoveUntil(
                   context,
-                  '/topup-success',
+                  '/transfer-success',
                   (route) => false,
                 );
               }
