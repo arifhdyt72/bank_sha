@@ -39,6 +39,7 @@ class CustomFormField extends StatelessWidget {
             ),
             contentPadding: const EdgeInsets.all(12),
           ),
+          controller: controller,
         ),
       ],
     );
