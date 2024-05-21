@@ -144,15 +144,17 @@ class _SignUpSetKtpPageState extends State<SignUpSetKtpPage> {
                                   widget.data.copyWith(
                                       ktp: selectedImage == null
                                           ? null
-                                          : 'data:image/png;base64${base64Encode(
+                                          // ignore: prefer_interpolation_to_compose_strings
+                                          : 'data:image/png;base64,'+base64Encode(
                                               File(selectedImage!.path)
                                                   .readAsBytesSync(),
-                                            )}'),
+                                            ),),
                                 ),
                               );
                         } else {
                           showCustomSnackbar(
-                              context, 'Gambar tidak boleh kosong!');
+                              context, 'Gambar tidak boleh kosong!',
+                            );
                         }
                       },
                     ),
