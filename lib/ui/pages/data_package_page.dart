@@ -80,6 +80,7 @@ class DataPackagePage extends StatelessWidget {
               if (await Navigator.pushNamed(context, '/pin') == true) {
                 // ignore: use_build_context_synchronously
                 Navigator.pushNamedAndRemoveUntil(
+                  // ignore: use_build_context_synchronously
                   context,
                   '/data-success',
                   (route) => false,

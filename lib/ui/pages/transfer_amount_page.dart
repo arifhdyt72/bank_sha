@@ -216,6 +216,7 @@ class _TransferAmountPageState extends State<TransferAmountPage> {
               if (await Navigator.pushNamed(context, '/pin') == true) {
                 // ignore: use_build_context_synchronously
                 Navigator.pushNamedAndRemoveUntil(
+                  // ignore: use_build_context_synchronously
                   context,
                   '/transfer-success',
                   (route) => false,

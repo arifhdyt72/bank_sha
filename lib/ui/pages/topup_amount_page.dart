@@ -218,6 +218,7 @@ class _TopupAmountPageState extends State<TopupAmountPage> {
                 await launchUrl(Uri.parse('https://demo.midtrans.com/'));
                 // ignore: use_build_context_synchronously
                 Navigator.pushNamedAndRemoveUntil(
+                  // ignore: use_build_context_synchronously
                   context,
                   '/topup-success',
                   (route) => false,
